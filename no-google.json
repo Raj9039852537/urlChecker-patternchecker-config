@@ -1,0 +1,32 @@
+{  
+"Google images ➔ Mojeek image": {
+    "regex": "^https?:\/\/([a-z]+\\.)*?google\\.[a-z]+\/search\\?(.*&)*(q=[^&]*).*",
+    "replacement": "https:\/\/www.mojeek.com\/search?$3&fmt=images",
+    "automatic": "false",
+    "enabled": "true"
+  },
+  "Google search ➔ Mojeek search": {
+    "regex": "^https?:\/\/(?:[a-z0-9-]+\\.)*?google.*\/(.*)",
+    "replacement": "https:\/\/www.mojeek.com\/$1",
+    "automatic": "false",
+    "enabled": "true"
+  },
+  "Google images ➔ SearxNG image": {
+    "regex": "^https?:\/\/([a-z]+\\.)*?google\\.[a-z]+\/search\\?(.*&)*(q=[^&]*).*",
+    "replacement": [
+      "https:\/\/searx.org\/search?$3&category_images=on",
+      "https:\/\/metasearch.nl\/search?$3&category_images=on",
+    ],
+    "automatic": "false",
+    "enabled": "true"
+  },
+  "Google search ➔ SearxNG search": {
+    "regex": "^https?:\/\/(?:[a-z0-9-]+\\.)*?google.*\/(.*)",
+    "replacement": [
+      "https:\/\/searx.org\/$1",
+      "https:\/\/metasearch.nl\/$1"
+    ],
+    "automatic": "false",
+    "enabled": "true"
+ }
+}
