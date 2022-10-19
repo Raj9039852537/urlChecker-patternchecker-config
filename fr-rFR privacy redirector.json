@@ -1,0 +1,252 @@
+{
+  "Avertissement! Caractères non ascii détectés": {
+    "regex": "[^\\p{ASCII}]"
+  },
+  "Lien http, pensez à utiliser l'https": {
+    "regex": "^http:\/\/",
+    "replacement": "https:\/\/"
+    "automatic": "false",
+    "enabled": "true"
+  },
+  "Schéma http manquant.": {
+    "regex": "^(?!.*:)",
+    "replacement": "http:\/\/$0"
+    "automatic": "false",
+    "enabled": "true"
+  },
+  "Schéma https manquant.": {
+    "regex": "^(?!.*:)",
+    "replacement": "https:\/\/$0"
+    "automatic": "true",
+    "enabled": "true"
+  },
+  "rediriger vers l'url suivante": {
+    "regex": "(?:(.*))url=(.*)",
+    "replacement": "$2",
+    "enabled": "true"
+  },
+  "fix strings1": {
+    "regex": "%2F",
+    "replacement": "\/",
+    "automatic": "true",
+    "enabled": "true"
+  },
+  "fix string2": {
+    "regex": "%3A",
+    "replacement": ":",
+    "automatic": "true",
+    "enabled": "true"
+  },
+  "Google ➔ SearxNG": {
+    "regex": "^https?:\/\/(?:[a-z0-9-]+\\.)*?google.*\/(.*)",
+    "replacement": [
+      "https:\/\/searx.org\/$1",
+      "https:\/\/metasearch.nl\/$1"
+    ],
+    "automatic": "false",
+    "enabled": "true"
+  },
+  "Google translate ➔ Lingva": {
+    "regex": "^https?:\\\/\\\/(?:[a-z0-9-]+\\.)*?translate\\.google\\.com\\\/(.*)",
+    "replacement": "https:\/\/farside.link\/lingva\/$1",
+    "automatic": "false",
+    "enabled": "true"
+  },
+  "Google maps ➔ openstreetmaps": {
+    "regex": "^https?:\\\/\\\/.*google\\.com\\\/maps\\\/place\\\/(?:(.*\\\/)+)*@([\\d.]+),([\\d.]+),([\\d.z]+)(.*)",
+    "replacement": "https:\/\/www.openstreetmap.org\/#maps=\/$4\/$2\/$3",
+    "automatic": "false",
+    "enabled": "true"
+  },
+  "Google maps ➔ geo uri": {
+    "regex": "^https?:\\\/\\\/.*google\\.com\\\/maps\\\/place\\\/(?:(.*\\\/)+)*@([\\d.]+),([\\d.]+),([\\d.z]+)(.*)",
+    "replacement": "geo:0,0?q=$2,$3,z=$4",
+    "automatic": "false",
+    "enabled": "true"
+  },
+  "Reddit ➔ Teddit": {
+    "regex": "^https?:\\\/\\\/(?:[a-z0-9-]+\\.)*?reddit\\.com\\\/(.*)",
+    "replacement": "https:\/\/teddit.net\/$1",
+    "replacement1": "https:\/\/farside.link\/teddit\/$1",
+    "comment": "useless string",
+    "automatic": "false",
+    "enabled": "true"
+  },
+  "reddit ➔ reveddit": {
+    "regex": "^https:\\\/\\\/.*(reddit\\.com|teddit\\.net)\\\/(.*)",
+    "replacement": "https:\/\/reveddit.com\/$2",
+    "automatic": "false",
+    "enabled": "true"
+  },
+  "Redd.it ➔ Teddit": {
+    "regex": "^https?:\\\/\\\/(i\\.|preview\\.)redd\\.it\\\/(.*)",
+    "replacement": "https:\/\/farside.link\/teddit\/pics\/w:null_$2",
+    "enabled": "true"
+  },
+  "Twitter ➔ Nitter": {
+    "regex": "^https?:\\\/\\\/(www\\.|mobile\\.)?twitter\\.com\\\/(.*)",
+    "replacement": "https:\/\/farside.link\/nitter\/$2",
+    "enabled": "true"
+  },
+  "Twitter image ➔ Nitter": {
+    "regex": "^https?:\\\/\\\/(pic\\.twitter|pbs\\.twimg)\\.com\\\/(.*)",
+    "replacement": "https:\/\/farside.link\/nitter\/pic\/$1",
+    "enabled": "true"
+  },
+  "Youtube ➔ Invidious": {
+    "regex": "^https?:\\\/\\\/(www\\.|m\\.)?(youtube\\.com|youtu\\.be|youtube-nocookie\\.com)\\\/(.*)",
+    "replacement": "https:\/\/farside.link\/invidious\/$3&quality=360",
+    "enabled": "true"
+  },
+  "Youtube music playlist ➔ beatbump.ml": {
+    "regex": "^https?:\\\/\\\/music\\.youtube\\.com\\\/playlist\\?list=(.*)",
+    "replacement": "https:\/\/beatbump.ml\/playlist\/VL$1",
+    "enabled": "true"
+  },
+  "Youtube music channel ➔ beatbump.ml": {
+    "regex": "^https?:\\\/\\\/music\\.youtube\\.com\\\/channel(.*)",
+    "replacement": "https:\/\/beatbump.ml\/artist$1",
+    "enabled": "true"
+  },
+  "Youtube music ➔ explore beatbump.ml": {
+    "regex": "^https?:\\\/\\\/music\\.youtube\\.com\\\/explore(.*)",
+    "replacement": "https:\/\/beatbump.ml\/trending$1",
+    "enabled": "true"
+  },
+  "Youtube music moods and genre ➔ beatbump.ml": {
+    "regex": "^https?:\\\/\\\/music\\.youtube\\.com\\\/moods_and_genres(.*)",
+    "replacement": "https:\/\/beatbump.ml\/explore$1",
+    "enabled": "true"
+  },
+  "Youtube music others ➔ beatbump.ml": {
+    "regex": "^https?:\\\/\\\/music\\.youtube\\.com\\\/(?!playlist)(?!explore)(?!channel)(?!moods_and_genres)(.*)",
+    "replacement": "https:\/\/beatbump.ml\/$1",
+    "enabled": "true"
+  },
+  "Imgur ➔ Rimgo": {
+    "regex": "^https?:\\\/\\\/(?:[a-z0-9-]+\\.)*?imgur\\.com\\\/(.*)",
+    "replacement": "https:\/\/farside.link\/rimgo\/$1",
+    "enabled": "true"
+  },
+  "Medium ➔ Scribe": {
+    "regex": "^https?:\\\/\\\/www\\.medium\\.com\\\/(.*)",
+    "replacement": "https:\/\/farside.link\/scribe\/$1",
+    "enabled": "true"
+  },
+  "Medium subdomain ➔ Scribe": {
+    "regex": "^https?:\\\/\\\/(\\w*(?!www))\\.medium\\.com\\\/(.*)",
+    "replacement": "https:\/\/farside.link\/scribe\/@$1\/$2",
+    "enabled": "true"
+  },
+  "Hacker news ➔ algolia": {
+    "regex": "^https?:\\\/\\\/(?:[a-z0-9-]+\\.)*?news\\.ycombinator\\.com\\\/(.*)",
+    "replacement": "https:\/\/hn.algolia.com\/$1",
+    "enabled": "true"
+  },
+  "Reuters ➔ neuters": {
+    "regex": "^https?:\\\/\\\/(?:[a-z0-9-]+\\.)*?reuters\\.com\\\/(.*)",
+    "replacement": "https:\/\/neuters.com\/$1",
+    "enabled": "true"
+  },
+  "Quora ➔ quetre": {
+    "regex": "^https?:\\\/\\\/(?:[a-z0-9-]+\\.)*?quora\\.com\\\/(.*)",
+    "replacement": "https:\/\/quetre.pussthecat.org\/$1",
+    "enabled": "true"
+  },
+  "Wikipedia ➔ Wikiless": {
+    "regex": "^https?:\\\/\\\/([a-z0-9-]){2}(\\.)?wikipedia\\.org\\\/(.*)",
+    "replacement": "https:\/\/farside.link\/wikiless\/$3?lang=$1",
+    "enabled": "true"
+  },
+  "Wikiless fix": {
+    "regex": "^https?:\\\/\\\/farside\\.link\\\/wikiless(.*)=$",
+    "replacement": "https:\/\/farside.link\/wikiless$1=fr",
+    "automatic": "true",
+    "enabled": "true"
+  },
+  "Tiktok discover": {
+    "regex": "^https?:\\\/\\\/(?:[a-z0-9-]+\\.)*?tiktok\\.com\\\/discover(.*)",
+    "replacement": "https:\/\/farside.link\/proxitok\/tag$1",
+    "enabled": "true"
+  },
+  "Tiktok": {
+    "regex": "^https?:\\\/\\\/(?:[a-z0-9-]+\\.)*?tiktok\\.com\\\/(?!discover)(.*)",
+    "replacement": "https:\/\/farside.link\/proxitok\/$1",
+    "enabled": "true"
+  },
+  "Instagram account fix": {
+    "regex": "^https?:\\\/\\\/([a-z0-9-]+\\.)*?instagram\\.com\\\/accounts\\\/login\\\/\\?next=(.*)",
+    "replacement": "https:\/\/$1instagram.com$2",
+    "automatic": "true",
+    "enabled": "true"
+  },
+  "Instagram reel ➔ bibliogran": {
+    "regex": "^https?:\\\/\\\/([a-z0-9-]+\\.)*?instagram\\.com\\\/(reel|tv|igtv)\\\/(.*)",
+    "replacement": "https:\/\/farside.link\/bibliogram\/p\/$3",
+    "enabled": "true"
+  },
+  "Instagram post ➔ bibliogram": {
+    "regex": "^https?:\\\/\\\/([a-z0-9-]+\\.)*instagram\\.com\\\/p\\\/(.*)",
+    "replacement": "https:\/\/farisde.link\/bibliogram\/p\/$2",
+    "enabled": "true"
+  },
+  "Instagram profile ➔ bibliogram": {
+    "regex": "^https?:\\\/\\\/([a-z0-9-]+\\.)*?instagram\\.com\\\/(?!p\\\/)(?!reel\\\/)(?!accounts\\\/)(.*)",
+    "replacement": "https:\/\/farside.link\/bibliogram\/u\/$2",
+    "enabled": "true"
+  },
+  "tinyurl": {
+    "regex": "^https?:\\\/\\\/tinyurl\\.com\\\/(.*)",
+    "replacement": "https:\/\/preview.tinyurl.com\/$1",
+    "enabled": "true"
+  },
+  "goo.gl & bit.ly": {
+    "regex": "^https?:\\\/\\\/(goo\\.gl|bit\\.ly|j\\.mp|nyti\\.us)\\\/([0-9a-zA-Z]*)(?!\\+)$",
+    "replacement": "https:\/\/$1\/$2+",
+    "enabled": "true"
+  },
+  "isgd": {
+    "regex": "^https?:\\\/\\\/is\\.gd\\\/([0-9a-zA-Z]*)(?!\\-)$",
+    "replacement": "https:\/\/is.gd\/$1-",
+    "enabled": "true"
+  },
+  "tinycc": {
+    "regex": "^https?:\\\/\\\/tiny\\.cc\\\/([0-9a-zA-Z]*)(?!\\~)$",
+    "replacement": "https:\/\/tiny.cc\/$1~",
+    "enabled": "true"
+  },
+  "curtly": {
+    "regex": "^https?:\\\/\\\/curt\\.ly\\\/([0-9a-zA-Z]*)(?!\\@)$",
+    "replacement": "https:\/\/curt.ly\/$1@",
+    "enabled": "true"
+  },
+  "bit.do": {
+    "regex": "^https?:\\\/\\\/bit\\.do\\\/(?!expand\\\/)([0-9a-zA-Z]*)",
+    "replacement": "https:\/\/curt.ly\/$1@",
+    "enabled": "true"
+  },
+  "proxy it with ononoki.org": {
+    "regex1": "^(https?):\\\/\\\/([\\s\\S]*)$",
+    "regex": "^(?!.*(morty\\.))(.*)",
+    "replacement": "https:\/\/morty.ononoki.org\/?mortyurl=$2",
+    "enabled": "true"
+  },
+  "proxy it with serx.ml": {
+    "regex1": "^(https?):\\\/\\\/([\\s\\S]*)$",
+    "regex": "^(?!.*(morty\\.))(.*)",
+    "replacement": "https:\/\/morty.serx.ml\/?mortyurl=$2",
+    "enabled": "true"
+  },
+  "proxy it with archive.ph": {
+    "regex1": "^(https?):\\\/\\\/([\\s\\S]*)$",
+    "regex": "^(?!.*(archive\\.))(.*)",
+    "replacement": "https:\/\/archive.ph\/$2",
+    "enabled": "true"
+  },
+  "proxy it with archive.org": {
+    "regex1": "^(https?):\\\/\\\/([\\s\\S]*)$",
+    "regex": "^(?!.*(atchive\\.))(.*)",
+    "replacement": "https:\/\/web.archive.org\/web\/$2",
+    "enabled": "true"
+  }
+}
