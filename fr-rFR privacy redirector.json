@@ -154,8 +154,8 @@
     "enabled": "true"
   },
   "Wikipedia ➔ Wikiless": {
-    "regex": "^https?:\\\/\\\/([a-z0-9-]){2}(\\.)?wikipedia\\.org\\\/(.*)",
-    "replacement": "https:\/\/wikiless.org\/$3?lang=fr",
+    "regex": "^https?:\\\/\\\/([a-z0-9-])*?(\\.)?wikipedia\\.org\\\/(.*)",
+    "replacement": "https:\/\/farside.link\/wikiless\/$3?lang=$1",
     "automatic": "false",
     "enabled": "true"
   },
