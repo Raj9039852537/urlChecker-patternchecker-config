@@ -5,7 +5,7 @@
     "automatic": "false",
     "enabled": "true"
   },
-"Google images ➔ Mojeek image": {
+  "Google images ➔ Mojeek image": {
     "regex": "^https?:\/\/([a-z]+\\.)*?google\\.[a-z]+\/search\\?(.*&)*(q=[^&]*).*",
     "replacement": "https:\/\/www.mojeek.com\/search?$3&fmt=images",
     "automatic": "false",
