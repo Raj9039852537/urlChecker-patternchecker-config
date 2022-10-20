@@ -38,4 +38,4 @@ height="40">](http://creativecommons.org/licenses/by/4.0/)
 ### Small Print
 
 This repository is not directly related to [**URLChecker**](https://github.com/TrianguloY/UrlChecker) app, or to it's developer, [**TrianguloY**](https://github.com/TrianguloY) so \
-**for any problem directly related to the files of this repository, please communicate on this repository only, thank you.**
+**for any problem directly related to the files from this repo, please communicate on this repository only, thank you.**
