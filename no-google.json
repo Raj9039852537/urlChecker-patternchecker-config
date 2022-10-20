@@ -17,6 +17,12 @@
     "automatic": "false",
     "enabled": "true"
   },
+  "Gsearch ➔ Presearch": {
+    "regex": "^https?:\/\/(?:[a-z0-9-]+\\.)*?google.*\/(.*)",
+    "replacement": "https:\/\/presearch.com\/$1",
+    "automatic": "false",
+    "enabled": "true"
+  },
   "Google images ➔ SearxNG image": {
     "regex": "^https?:\/\/([a-z]+\\.)*?google\\.[a-z]+\/search\\?(.*&)*(q=[^&]*).*",
     "replacement": [
