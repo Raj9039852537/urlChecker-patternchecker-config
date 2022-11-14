@@ -6,7 +6,7 @@
   "Http link, consider using https": {
     "regex": "^http:\/\/(?!.*\\.onion\/?)",
     "replacement": "https:\/\/",
-    "exceptions": "http:\/\/([a-z0-9-])*?.onion\/(.*)",
+    "exceptions": "http:\/\/([a-z0-9-])*?.onion\/",
     "enabled": "true",
     "automatic": "false"
   },
