@@ -3,10 +3,11 @@
     "regex": "[^\\p{ASCII}]"
   },
   "Lien http, pensez à utiliser l'https": {
-    "regex": "^http:\/\/",
-    "replacement": "https:\/\/"
-    "automatic": "false",
-    "enabled": "true"
+    "regex": "^http:\/\/(?!.*\\.onion\/?)",
+    "replacement": "https:\/\/",
+    "exceptions": "http:\/\/([a-z0-9-])*?.onion\/(.*)",
+    "enabled": "true",
+    "automatic": "false"
   },
   "Schéma http manquant.": {
     "regex": "^(?!.*:)",
