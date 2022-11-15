@@ -4,9 +4,9 @@
     "enabled": "true"
   },
   "Http link, consider using https": {
-    "regex": "^http:\/\/(?!.*\\.(onion|i2p)\/?)",
+    "regex": "^http:\/\/(?!.*\\.(onion|i2p|bit)\/?)",
     "replacement": "https:\/\/",
-    "exceptions": "http:\/\/([a-z0-9-])*?.(onion|i2p)\/",
+    "exceptions": "http:\/\/([a-z0-9-])*?.(onion|i2p|bit)\/",
     "enabled": "true",
     "automatic": "false"
   },
