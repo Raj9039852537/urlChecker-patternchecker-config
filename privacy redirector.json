@@ -4,9 +4,11 @@
     "enabled": "true"
   },
   "Http link, consider using https": {
-    "regex": "^http:\/\/(.*)",
-    "replacement": "https:\/\/$1",
-    "enabled": "true"
+    "regex": "^http:\/\/(?!.*\\.onion\/?)",
+    "replacement": "https:\/\/",
+    "exceptions": "http:\/\/([a-z0-9-])*?.onion\/",
+    "enabled": "true",
+    "automatic": "false"
   },
   "Missing http scheme.": {
     "regex": "^(?!.*:).*",
