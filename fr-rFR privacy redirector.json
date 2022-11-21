@@ -3,9 +3,9 @@
     "regex": "[^\\p{ASCII}]"
   },
   "Lien http, pensez à utiliser l'https": {
-    "regex": "^http:\/\/(?!.*\\.(onion|i2p|bit|ano)\/?)",
+    "regex": "^http:\/\/(?!.*\\.(onion|i2p|bit|ano|loki)\/?)",
     "replacement": "https:\/\/",
-    "exceptions": "http:\/\/([a-z0-9-])*?.(onion|i2p|bit|ano)\/",
+    "exceptions": "http:\/\/([a-z0-9-])*?.(onion|i2p|bit|ano|loki)\/",
     "enabled": "true",
     "automatic": "false"
   },
