@@ -1,29 +1,29 @@
 {  
-  "Google search ➔ Ecosia search": {
+  "G.search ➔ Ecosia search": {
     "regex": "^https?:\/\/(?:[a-z0-9-]+\\.)*?google.*\/(.*)",
     "replacement": "https:\/\/www.ecosia.org\/$1",
     "automatic": "false",
     "enabled": "true"
   },
-  "Google images ➔ Mojeek image": {
+  "G.images ➔ Mojeek image": {
     "regex": "^https?:\/\/([a-z]+\\.)*?google\\.[a-z]+\/search\\?(.*&)*(q=[^&]*).*",
     "replacement": "https:\/\/www.mojeek.com\/search?$3&fmt=images",
     "automatic": "false",
     "enabled": "true"
   },
-  "Google search ➔ Mojeek search": {
+  "G.search ➔ Mojeek search": {
     "regex": "^https?:\/\/(?:[a-z0-9-]+\\.)*?google.*\/(.*)",
     "replacement": "https:\/\/www.mojeek.com\/$1",
     "automatic": "false",
     "enabled": "true"
   },
-  "Gsearch ➔ Presearch": {
+  "G.search ➔ Presearch": {
     "regex": "^https?:\/\/(?:[a-z0-9-]+\\.)*?google.*\/(.*)",
     "replacement": "https:\/\/presearch.com\/$1",
     "automatic": "false",
     "enabled": "true"
   },
-  "Google images ➔ SearxNG image": {
+  "G.images ➔ SearxNG image": {
     "regex": "^https?:\/\/([a-z]+\\.)*?google\\.[a-z]+\/search\\?(.*&)*(q=[^&]*).*",
     "replacement": [
       "https:\/\/searx.org\/search?$3&category_images=on",
@@ -32,7 +32,7 @@
     "automatic": "false",
     "enabled": "true"
   },
-  "Google search ➔ SearxNG search": {
+  "G.search ➔ SearxNG search": {
     "regex": "^https?:\/\/(?:[a-z0-9-]+\\.)*?google.*\/(.*)",
     "replacement": [
       "https:\/\/searx.org\/$1",
