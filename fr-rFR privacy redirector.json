@@ -6,7 +6,7 @@
     "regex": "^http:\/\/(?!.*\\.(onion|i2p|bit|ano|loki)\/?)",
     "replacement": "https:\/\/",
     "exceptions": "http:\/\/([a-z0-9-])*?.(onion|i2p|bit|ano|loki)\/",
-    "Comments": "explication aux exceptions .onion pour tor, .i2p pour i2p, .loki pour lokinet, .ano pour anonet, .bit pour zeronet"
+    "Comments": "explication aux exceptions .onion pour tor, .i2p pour i2p, .loki pour lokinet, .ano pour anonet, .bit pour zeronet",
     "enabled": "true",
     "automatic": "false"
   },
