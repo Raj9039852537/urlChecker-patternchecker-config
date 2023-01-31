@@ -4,12 +4,11 @@
     "enabled": "true"
   },
   "Http link, consider using https": {
-    "regex": "^http:\/\/(?!.*\\.(onion|i2p|bit|ano|loki)\/?)",
-    "replacement": "https:\/\/",
-    "exceptions": "http:\/\/([a-z0-9-])*?.(onion|i2p|bit|ano|loki)\/",
+    "regex": "^http:\/\/(?!(.*\\.(onion|i2p|bit|ano|loki)\/?))",
     "Comments": "explanation to exceptions onion for tor, i2p for i2p, loki for lokinet, ano for anonet, bit for zeronet",
-    "enabled": "true",
-    "automatic": "false"
+    "replacement": "https:\/\/",
+    "automatic": "true",
+    "enabled": "true"
   },
   "Missing http scheme.": {
     "regex": "^(?!.*:).*",
@@ -36,6 +35,12 @@
     "regex": "%3A",
     "replacement": ":",
     "automatic": "true",
+    "enabled": "true"
+  },
+  "stackoverflow to anaonymousoverflow": {
+    "regex": "\\\/stackoverflow\\.com\\\/",
+    "replacement": "\/code.whatever.social\/",
+    "comment": "stackoverflow to default instance of anonymousoverflow",
     "enabled": "true"
   },
   "Reddit to Teddit": {
@@ -234,6 +239,16 @@
     "regex1": "^(https?):\\\/\\\/([\\s\\S]*)$",
     "regex": "^(?!.*(atchive\\.))(.*)",
     "replacement": "https:\/\/web.archive.org\/web\/$2",
+    "enabled": "true"
+  },
+  "play store to apkmirror": {
+    "regex": "^(https?):\\\/\\\/play\\.google\\.com\\\/store\\\/apps\\\/details\\?id=(.*)",
+    "replacement": "https:\/\/www.apkmirror.com\/?s=$2",
+    "enabled": "true"
+  },
+  "play store to apkpure": {
+    "regex": "^(https?):\\\/\\\/play\\.google\\.com\\\/store\\\/apps\\\/details\\?id=(.*)",
+    "replacement": "https:\/\/m.apkpure.com\/search?q=$2",
     "enabled": "true"
   }
 }
