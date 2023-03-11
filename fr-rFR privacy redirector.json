@@ -131,7 +131,7 @@
     "enabled": "true"
   },
   "Medium ➔ Scribe": {
-    "regex": "^https?:\\\/\\\/www\\.medium\\.com\\\/(.*)",
+    "regex": "^https?:\\\/\\\/(www\\.|)medium\\.com\\\/(.*)",
     "replacement": "https:\/\/farside.link\/scribe\/$1",
     "enabled": "true"
   },
