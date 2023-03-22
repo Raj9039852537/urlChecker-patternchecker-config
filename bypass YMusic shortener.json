@@ -1,0 +1,8 @@
+{
+  "YMusic ➔ Youtube": {
+    "regex": "^https:\/\/ymusic.io\/watch\\?v=",
+    "replacement": "https:\/\/youtu.be\/",
+    "automatic": "true",
+    "enabled": "true"
+  }
+}
