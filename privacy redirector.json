@@ -112,7 +112,7 @@
   },
   "Medium subdomain to Scribe": {
     "regex": "^https?:\\\/\\\/(\\w*(?!www))\\.medium\\.com\\\/(.*)",
-    "replacement": "https:\/\/farside.link\/scribe\/@$1\/$2",
+    "replacement": "https:\/\/farside.link\/scribe\/$1\/$2",
     "enabled": "true"
   },
   "Google translate to Lingva": {
