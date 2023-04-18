@@ -1,0 +1,6 @@
+{
+  "Remove href.li from URL": {
+    "regex": "^https?:\/\/href.li\/\\?",
+    "replacement": ""
+  }
+}
