@@ -1,0 +1,27 @@
+{
+  "Where to Watch": {
+    "regex": "^(.*)!n$",
+    "replacement": "https:\/\/www.justwatch.com\/in\/search?q=$1",
+    "enabled": "true"
+  },
+  "YTS Search": {
+    "regex": "^(.*)!y$",
+    "replacement": "https:\/\/morty.ononoki.org\/?mortyurl=https%3A%2F%2Fyts.mx%2Fbrowse-movies%2F$1",
+    "enabled": "true"
+  },
+  "IMDb Search": {
+    "regex": "^(.*)!i$",
+   "replacement": "https:\/\/www.imdb.com\/find?q=$1",
+    "enabled": "true"
+  },
+  "Google Maps": {
+    "regex": "^(.*)!m$",
+    "replacement": "https:\/\/www.google.com\/maps\/search\/?api=1&query=$1",
+    "enabled": "true"
+  },
+  "DuckDuckGo Search": {
+    "regex": "^(.*)!d$",
+    "replacement": "https:\/\/duckduckgo.com\/?q=$1",
+    "enabled": "true"
+  },
+}
