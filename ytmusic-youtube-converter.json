@@ -1,0 +1,17 @@
+{
+  "Youtube ➔ YT Music": {
+    "regex": "^(https?:\/\/w*m?.?)?youtube.com",
+    "replacement": "https:\/\/music.youtube.com",
+    "enabled": "true"
+  },
+  "Youtu.be ➔ YT Music": {
+    "regex": "^(https?:\/\/w*m?.?)?youtu.be\/",
+    "replacement": "https:\/\/music.youtube.com\/watch\\?v=",
+    "enabled": "true"
+  },
+  "YMusic ➔ Youtube": {
+    "regex": "^(https?:\/\/)?music.youtube.com",
+    "replacement": "https:\/\/youtube.com",
+    "enabled": "true"
+  }
+}
