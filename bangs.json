@@ -4,7 +4,7 @@
     "replacement": "https:\/\/www.justwatch.com\/in\/search?q=$1",
     "enabled": "true"
   },
-  "YTS Search": {
+  "Proxyfied YTS Search": {
     "regex": "^(.*)!y$",
     "replacement": "https:\/\/morty.ononoki.org\/?mortyurl=https%3A%2F%2Fyts.mx%2Fbrowse-movies%2F$1",
     "enabled": "true"
