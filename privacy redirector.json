@@ -61,8 +61,8 @@
     "enabled": "true"
   },
   "Twitter to Nitter": {
-    "regex": "^https?:\\\/\\\/((www\\.|mobile\\.)?twitter\\.com|x\\.com)\\\/(.*)",
-    "replacement": "https:\/\/farside.link\/nitter\/$2",
+    "regex": "^https?:\\\/\\\/(www\\.|mobile\\.)?(twitter|x)\\.com\\\/(.*)",
+    "replacement": "https:\/\/farside.link\/nitter\/$3",
     "enabled": "true"
   },
   "Twitter image to Nitter": {
