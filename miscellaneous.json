@@ -1,5 +1,5 @@
-  {
-    "Bypass that Paywall": {
+{
+  "Bypass that Paywall": {
     "regex1": "^(https?):\/\/(\\S*)$",
     "regex": "^(?!.*(12ft.))(.*)",
     "replacement": "https:\/\/12ft.io\/$2",
@@ -15,4 +15,9 @@
     "regex": "^(?!.*:)",
     "replacement": "https:\/\/search.brave.com\/search?q=$0"
   },
+  "X to Twitter": {
+        "regex": "^https?:\/\/(?:[a-z0-9-]+\\.)*?x.com\/(.*)",
+        "replacement": "https:\/\/twitter.com\/$1",
+        "enabled": "true"
+  }
 }
