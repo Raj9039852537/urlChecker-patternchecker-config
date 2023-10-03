@@ -1,0 +1,9 @@
+{
+	"sp.nicovideo.jp to www.nicovideo.jp": {
+		"Comments": "Replace mobile page to PC page, You can use it when you share with Twitter(X) etc.",
+		"regex": "^https?:\\\/\\\/sp\\.nicovideo\\.jp\\\/(.*)",
+		"replacement": "https:\/\/www.nicovideo.jp\/$1",
+		"enabled": "true",
+		"automatic": "true"
+	}
+}
