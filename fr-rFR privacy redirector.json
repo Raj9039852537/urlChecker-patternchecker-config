@@ -12,13 +12,13 @@
   },
   "Schéma http manquant.": {
     "regex": "^(?!.*:)",
-    "replacement": "http:\/\/$0"
+    "replacement": "http:\/\/$0",
     "automatic": "false",
     "enabled": "true"
   },
   "Schéma https manquant.": {
     "regex": "^(?!.*:)",
-    "replacement": "https:\/\/$0"
+    "replacement": "https:\/\/$0",
     "automatic": "true",
     "enabled": "true"
   },
