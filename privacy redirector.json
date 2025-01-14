@@ -237,7 +237,7 @@
   },
   "proxy it with archive.org": {
     "regex1": "^(https?):\\\/\\\/([\\s\\S]*)$",
-    "regex": "^(?!.*(atchive\\.))(.*)",
+    "regex": "^(?!.*(archive\\.))(.*)",
     "replacement": "https:\/\/web.archive.org\/web\/$2",
     "enabled": "true"
   },
