@@ -172,7 +172,7 @@
     "automatic": "true",
     "enabled": "true"
   },
-  "Instagram reel to bibliogran": {
+  "Instagram reel to bibliogram": {
     "regex": "^https?:\\\/\\\/([a-z0-9-]+\\.)*?instagram\\.com\\\/(reel|tv|igtv)\\\/(.*)",
     "replacement": "https:\/\/farside.link\/bibliogram\/p\/$3",
     "enabled": "true"
