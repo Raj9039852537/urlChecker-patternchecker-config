@@ -215,7 +215,7 @@
   },
   "tinycc": {
     "regex": "^https?:\\\/\\\/tiny\\.cc\\\/([0-9a-zA-Z]*)(?!\\~)$",
-    "replacement": "https:\/\/tiny.cc\/$1~",
+    "replacement": "https:\/\/tiny.cc\/$1=",
     "enabled": "true"
   },
   "curtly": {
