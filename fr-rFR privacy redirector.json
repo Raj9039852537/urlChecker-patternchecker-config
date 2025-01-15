@@ -137,7 +137,7 @@
   },
   "Medium subdomain ➔ Scribe": {
     "regex": "^https?:\\\/\\\/(\\w*(?!www))\\.medium\\.com\\\/(.*)",
-    "replacement": "https:\/\/farside.link\/scribe\/@$1\/$2",
+    "replacement": "https:\/\/farside.link\/scribe\/$1\/$2",
     "enabled": "true"
   },
   "Hacker news ➔ algolia": {
