@@ -5,12 +5,6 @@
     "replacement": "https:\/\/12ft.io\/$2",
     "enabled": "true"
   },
-  "Summarize This": {
-    "regex1": "^(https?):\/\/(\\S*)$",
-    "regex": "^(?!.*(smmry.))(.*)",
-    "replacement": "https:\/\/smmry.com\/$2#&SM_LENGTH=10",
-    "enabled": "true"
-  },
   "Search Term": {
     "regex": "^(?!.*:)",
     "replacement": "https:\/\/search.brave.com\/search?q=$0"
