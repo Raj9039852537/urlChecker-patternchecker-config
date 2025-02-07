@@ -172,7 +172,7 @@
     "automatic": "true",
     "enabled": "true"
   },
-  "Instagram reel to bibliogran": {
+  "Instagram reel to bibliogram": {
     "regex": "^https?:\\\/\\\/([a-z0-9-]+\\.)*?instagram\\.com\\\/(reel|tv|igtv)\\\/(.*)",
     "replacement": "https:\/\/farside.link\/bibliogram\/p\/$3",
     "enabled": "true"
@@ -204,7 +204,7 @@
   },
   "tinycc": {
     "regex": "^https?:\\\/\\\/tiny\\.cc\\\/([0-9a-zA-Z]*)(?!\\~)$",
-    "replacement": "https:\/\/tiny.cc\/$1~",
+    "replacement": "https:\/\/tiny.cc\/$1=",
     "enabled": "true"
   },
   "curtly": {
@@ -237,7 +237,7 @@
   },
   "proxy it with archive.org": {
     "regex1": "^(https?):\\\/\\\/([\\s\\S]*)$",
-    "regex": "^(?!.*(atchive\\.))(.*)",
+    "regex": "^(?!.*(archive\\.))(.*)",
     "replacement": "https:\/\/web.archive.org\/web\/$2",
     "enabled": "true"
   },

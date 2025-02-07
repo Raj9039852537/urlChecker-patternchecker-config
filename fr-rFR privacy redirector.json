@@ -12,13 +12,13 @@
   },
   "Schéma http manquant.": {
     "regex": "^(?!.*:)",
-    "replacement": "http:\/\/$0"
+    "replacement": "http:\/\/$0",
     "automatic": "false",
     "enabled": "true"
   },
   "Schéma https manquant.": {
     "regex": "^(?!.*:)",
-    "replacement": "https:\/\/$0"
+    "replacement": "https:\/\/$0",
     "automatic": "true",
     "enabled": "true"
   },
@@ -137,7 +137,7 @@
   },
   "Medium subdomain ➔ Scribe": {
     "regex": "^https?:\\\/\\\/(\\w*(?!www))\\.medium\\.com\\\/(.*)",
-    "replacement": "https:\/\/farside.link\/scribe\/@$1\/$2",
+    "replacement": "https:\/\/farside.link\/scribe\/$1\/$2",
     "enabled": "true"
   },
   "Hacker news ➔ algolia": {
@@ -183,7 +183,7 @@
     "automatic": "true",
     "enabled": "true"
   },
-  "Instagram reel ➔ bibliogran": {
+  "Instagram reel ➔ bibliogram": {
     "regex": "^https?:\\\/\\\/([a-z0-9-]+\\.)*?instagram\\.com\\\/(reel|tv|igtv)\\\/(.*)",
     "replacement": "https:\/\/farside.link\/bibliogram\/p\/$3",
     "enabled": "true"
@@ -215,7 +215,7 @@
   },
   "tinycc": {
     "regex": "^https?:\\\/\\\/tiny\\.cc\\\/([0-9a-zA-Z]*)(?!\\~)$",
-    "replacement": "https:\/\/tiny.cc\/$1~",
+    "replacement": "https:\/\/tiny.cc\/$1=",
     "enabled": "true"
   },
   "curtly": {
@@ -248,7 +248,7 @@
   },
   "proxy it with archive.org": {
     "regex1": "^(https?):\\\/\\\/([\\s\\S]*)$",
-    "regex": "^(?!.*(atchive\\.))(.*)",
+    "regex": "^(?!.*(archive\\.))(.*)",
     "replacement": "https:\/\/web.archive.org\/web\/$2",
     "enabled": "true"
   }
